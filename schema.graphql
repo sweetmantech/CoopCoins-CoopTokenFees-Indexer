@@ -9,4 +9,6 @@ type CoopCoin_CoopTokenFees {
   platformReferrerFee: BigInt!
   orderReferrerFee: BigInt!
   protocolFee: BigInt!
+  transactionHash: String!
+  blockNumber: Int!
 }

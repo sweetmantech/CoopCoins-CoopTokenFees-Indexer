@@ -17,6 +17,8 @@ CoopCoin.CoopTokenFees.handler(
       orderReferrerFee: event.params.orderReferrerFee,
       protocolFee: event.params.protocolFee,
       contract: event.srcAddress,
+      transactionHash: event.transaction.hash,
+      blockNumber: event.block.number,
     };
     context.CoopCoin_CoopTokenFees.set(coopCoinEntity);
   },
