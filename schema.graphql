@@ -1,0 +1,16 @@
+type BeneficiaryData {
+  id: ID!
+  lockId: String!
+  pool: String!
+  beneficiary: String!
+  shares: BigInt!
+  transactionHash: String!
+  blockNumber: Int!
+}
+
+type LockableUniswapV3Initializer_Lock {
+  id: ID!
+  pool: String!
+  transactionHash: String!
+  blockNumber: Int!
+}
