@@ -8,8 +8,13 @@ networks:
     contracts:
       - name: CoopCoin
         handler: ./src/EventHandlers.ts
+        abi_file_path: abis/Coop.json
         events:
-          - event: CoopTokenFees (address indexed tokenCreator, address indexed platformReferrer, address indexed orderReferrer, address protocolFeeRecipient, uint256 tokenCreatorFee, uint256 platformReferrerFee, uint256 orderReferrerFee, uint256 protocolFee)
+          - event: CoopTokenFees
+            field_selection:
+              transaction_fields:
+                - hash
+          - event: CoopTokenSecondaryRewards
             field_selection:
               transaction_fields:
                 - hash
