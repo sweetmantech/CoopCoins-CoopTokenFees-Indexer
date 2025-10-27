@@ -1,16 +1,12 @@
-type BeneficiaryData {
+type CoopCoin_CoopTokenFees {
   id: ID!
-  lockId: String!
-  pool: String!
-  beneficiary: String!
-  shares: BigInt!
-  transactionHash: String!
-  blockNumber: Int!
-}
-
-type LockableUniswapV3Initializer_Lock {
-  id: ID!
-  pool: String!
-  transactionHash: String!
-  blockNumber: Int!
+  contract: String!
+  tokenCreator: String!
+  platformReferrer: String!
+  orderReferrer: String!
+  protocolFeeRecipient: String!
+  tokenCreatorFee: BigInt!
+  platformReferrerFee: BigInt!
+  orderReferrerFee: BigInt!
+  protocolFee: BigInt!
 }
