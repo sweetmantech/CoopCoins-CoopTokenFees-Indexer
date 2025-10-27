@@ -12,3 +12,18 @@ type CoopCoin_CoopTokenFees {
   transactionHash: String!
   blockNumber: Int!
 }
+
+type CoopCoin_CoopTokenSecondaryRewards {
+  id: ID!
+  contract: String!
+  totalAmountEth: BigInt!
+  totalAmountToken: BigInt!
+  creatorAmountEth: BigInt!
+  creatorAmountToken: BigInt!
+  platformReferrerAmountEth: BigInt!
+  platformReferrerAmountToken: BigInt!
+  protocolAmountEth: BigInt!
+  protocolAmountToken: BigInt!
+  transactionHash: String!
+  blockNumber: Int!
+}
